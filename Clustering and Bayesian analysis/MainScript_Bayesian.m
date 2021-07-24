@@ -15,8 +15,8 @@ OutPath = 'Stats';
 %      Pseudowords  = 3
 %             Words = 4
 
-Cond1        = 'Cnd_3';
-Cond2        = 'Cnd_4';
+Cond1        = 'Pseudofonts';
+Cond2        = 'Words';
 CarrierFreq = 6;
 yLimMin     = 0;
 yLimMax     = 6;
@@ -56,7 +56,7 @@ end
 bf10 = nan(128,1);
 
 for e = 1:128
-    bf10(e) = t1smpbf(stats.tstat(e),size(M_1,1)); % Script originally writen by Sam Schwarzkopf (Twitter: @sampendu)
+    bf10(e) = t2smpbf(stats.tstat(e),size(M_1,1),size(M_1,1)); % Script originally writen by Sam Schwarzkopf (Twitter: @sampendu)
 end
 
 clc

@@ -20,8 +20,7 @@ for cnd = 1:4 % For each condition
         
         Fs = EEG.srate;         % Get Sampling rate
         L  = size(EEG.data,2);  % Length of the signal (one trial)
-        %D  = mean(EEG.data,3)'; % Take the mean of trials
-        D  = EEG.data(:,:,5)'; % Take the mean of trials
+        D  = mean(EEG.data,3)'; % Take the mean of trials
         
         Y  = fft(D); % Fast Fourier Transform
         
